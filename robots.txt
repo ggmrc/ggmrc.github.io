@@ -1,0 +1,26 @@
+# Policies for all agents
+User-agent: *
+Disallow: /cgi
+Disallow: /archives
+# keep robots out of zip files and dynamic stuff
+Disallow: /*.tgz
+Disallow: /*.gz
+Disallow: /*.zip
+Disallow: /*.cgi
+Disallow: /*.php
+
+# keep some rude engines out of the way (obsolete)
+User-agent: grub-client
+Disallow: /
+User-agent: OpenVAS-VT
+Disallow: /
+User-agent: Mozilla-VT
+Disallow: /
+
+# Don't feed the trolls (too much)
+User-agent: *
+Allow: /
+Crawl-delay: 3600
+
+
+
